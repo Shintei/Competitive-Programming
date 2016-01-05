@@ -12,3 +12,22 @@ This way required far more error checking due to how I could get false positives
 early. Numbers like 25 which had a substring of 5 and an alternate factor of 5 would show up as a value that 
 fits my restrictions even though this wasn't a legal example. I ended up working around that and getting it 
 to work for all values.
+
+
+PROBLEM BEING SOLVED:
+The goal of this Challenge was to build an application that returns all Vampire Numbers within a given range. 
+A vampire number is an integer
+
+    with an even number of digits
+    with a pair of factors (called the fangs) having two properties:
+        they have an equal number of digits
+        together, they possess exactly the same digits as the vampire number
+        not gotten by simply adding zeros to the end of a smaller vampire number
+
+The submissions for this contest were judged on three criteria:
+
+The first was accuracy. The VI must successfully find all of the Vampire Numbers in a given range. This could 
+be integers with a small number of digits, or integers with more digits than many data types can hold. The 
+next criterion was speed. For those submissions that did find all Vampire Numbers in a given range, how fast 
+could they find these? Finally, and very importantly, submissions were judged on code readability. Even if a 
+VI performs a specific task, it must be readable by other programmers and follow LabVIEW Style Guidelines.
