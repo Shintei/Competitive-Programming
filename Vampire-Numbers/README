@@ -1,0 +1,14 @@
+Vampnums version 1 is a basic solution for the problem while vampnums2 challenges the speed of the first by 
+providing a faster solution through finding all permutations of the numbers provided. This can lead to slower 
+solutions under certain circumstances but most show a performance increase.
+
+Implementation: For the permutation approach, after creating a list of substrings permutated that are all at 
+least 1 character shorter than the original number, I did a for each method that checked each element in the 
+list and did a modulus calculation. If the modulus was 0, I divided to find the other factor and checked if 
+the element was in the list. If it was, I concatenated the factors and sorted them along with my original 
+int x that was passed as a parameter. If they match, I returned the result.
+
+This way required far more error checking due to how I could get false positives if I wasn't catching them 
+early. Numbers like 25 which had a substring of 5 and an alternate factor of 5 would show up as a value that 
+fits my restrictions even though this wasn't a legal example. I ended up working around that and getting it 
+to work for all values.
